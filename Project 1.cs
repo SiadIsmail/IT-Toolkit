@@ -1,25 +1,29 @@
-int x = 1;
-while (x
-    == 1)
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+string Command = Console.ReadLine();
+if (Command == "CI");
 {
-    Console.WriteLine("Give me a number:");
-    int number = int.Parse(Console.ReadLine());
+    
+    
+      static async Task Main(string[] args) {
+        bool isConnected = await IsConnectedToInternetAsync();
+        Console.WriteLine(isConnected ? "Internet connection available" : "No internet connection");
+     }
 
-    Console.WriteLine("Give me a second number:");
-    int secondNumber = int.Parse(Console.ReadLine());
+       static async Task<bool> IsConnectedToInternetAsync() {
+        try {
+            using (var client = new HttpClient()) {
+                client.Timeout = TimeSpan.FromSeconds(5);
+                var response = await client.GetAsync("http://google.com/generate_204");
+                return response.IsSuccessStatusCode;
+            }
+        }
+        catch {
+            return false;
+        }
 
-    int sum = number + secondNumber;
-    Console.WriteLine("The sum is: " + sum);
-
-    Console.WriteLine("Want to try again? (yes/no)");
-    string answer = Console.ReadLine();
-    if (answer.ToLower() == "yes")
-    {
-        continue; // Restart the loop
     }
-    else
-    {
-        Console.WriteLine("Goodbye!");
-        break; // Exit the loop and end the program
-    }
+    
 }
+
