@@ -1,1 +1,1 @@
-This is my Logisitics project.
+IT Toolkit project for quick diagnosis
