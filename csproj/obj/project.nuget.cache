@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Y9iYTIcNWD0=",
+  "dgSpecHash": "OnS9bH/zr/o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kmlax\\Projekte\\Rattengift\\csproj\\csproj.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\kmlax\\Projekte\\IT-Toolkit\\IT-Toolkit\\csproj\\csproj.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kmlax\\.nuget\\packages\\system.codedom\\10.0.0\\system.codedom.10.0.0.nupkg.sha512",
+    "C:\\Users\\kmlax\\.nuget\\packages\\system.management\\10.0.0\\system.management.10.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
